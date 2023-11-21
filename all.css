@@ -1,0 +1,2599 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+img.navbar-line {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px;
+}
+
+section.group-tour div.layer-background {
+  background: rgba(0, 139, 200, 0.05);
+}
+
+section.theme-tour div.layer-background {
+  background: rgba(0, 168, 95, 0.05);
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  div.container {
+    position: relative;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title-mb {
+    margin: 24px;
+  }
+  header div.fixed-navbar {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    top: 0;
+    border-bottom: 1px #eee solid;
+    width: 100%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 99;
+  }
+  header div.fixed-navbar div.navbar-mobile-container {
+    display: none;
+  }
+  header div.fixed-navbar label.navbar-close-button,
+  header div.fixed-navbar label.channel-close-button {
+    display: none;
+  }
+  header div.fixed-navbar div.navbar-group {
+    opacity: 1;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container {
+    width: 1200px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container img {
+    width: 160px;
+    height: auto;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item {
+    position: relative;
+    margin: 0 8px;
+    padding: 4px 8px;
+    transition: 0.1s;
+    border-radius: 2px;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item:hover {
+    content: "";
+    background: #eee;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item a.navbar-link {
+    color: #444;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.1s;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item a.navbar-link i {
+    margin-right: 12px;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item a.navbar-link:hover {
+    color: #000;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container {
+    width: 1200px;
+    position: relative;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item {
+    margin: 2px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:hover {
+    content: "";
+    background: #eee;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item a.navbar-link {
+    position: relative;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(1) a i.fa {
+    color: #e50012;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(2) a i.fa {
+    color: #ec6c00;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(3) a i.fa {
+    color: #f9be00;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(4) a i.fa {
+    color: #00a85f;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(5) a i.fa {
+    color: #008bc8;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(6) a i.fa {
+    color: #905ca2;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(7) a i.fa {
+    color: #bbb;
+  }
+  header div.fixed-navbar div.channel-travel {
+    display: none;
+  }
+  section.carousel-panel {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1920px;
+    height: 500px;
+    margin: 130px 0;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  section.carousel-panel div.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.image-container .carousel {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+  }
+  section.carousel-panel div.image-container .carousel img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.carousel-panel ul.page-button-group {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 16px;
+  }
+  section.carousel-panel ul.page-button-group li.page-button {
+    width: 40px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  section.carousel-panel ul.page-button-group li.page-button:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+  section.carousel-panel ul.page-button-group li.page-button:active,
+  section.carousel-panel ul.page-button-group li.page-button :focus {
+    background: #ec6c00;
+  }
+  section.carousel-panel .page-button-active {
+    background: #ec6c00;
+  }
+  section.carousel-panel div.side-button-group {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.side-button-group i {
+    background: transparent;
+    padding: 16px;
+    color: #444;
+    transition: all 0.1s ease;
+  }
+  section.carousel-panel div.side-button-group i:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  section.carousel-panel div.side-button-group i:active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ec6c00;
+  }
+  section.search-panel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+  }
+  section.search-panel div.search-panel-block {
+    width: 1200px;
+    height: 236px;
+    padding: 0;
+    background: #fff;
+    border-radius: 24px;
+    position: absolute;
+    top: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 8px 64px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title {
+    background: #905ca2;
+    color: 0;
+    padding: 8px 0;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title h1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #eee;
+  }
+  section.search-panel div.search-panel-block form {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    top: 12px;
+  }
+  section.search-panel div.search-panel-block form div.form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  section.search-panel div.search-panel-block form div.form-group::before {
+    content: "";
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    border-right: 2px solid #eee;
+    height: 80px;
+    width: 240px;
+    z-index: -1;
+  }
+  section.search-panel div.search-panel-block form div.form-group:nth-last-child(-n+2)::before {
+    border: none;
+  }
+  section.search-panel div.search-panel-block form div.form-group:nth-child(3)::before {
+    right: 285px;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label span.checkbox-content {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    top: -2px;
+  }
+  section.search-panel div.search-panel-block form div.form-group select.form-control {
+    width: 200px;
+  }
+  section.search-panel div.search-panel-block form div.form-group input.form-control {
+    width: 200px;
+  }
+  section.search-panel div.search-panel-block form div.form-group input.form-date-control {
+    width: 90px;
+  }
+  section.search-panel div.search-panel-block form div.form-group span.date-to-date {
+    margin: 0 12px;
+  }
+  section.search-panel div.search-panel-block form div.form-group .input-style {
+    padding: 12px 0;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+  }
+  section.search-panel div.search-panel-block form button.submit-button {
+    position: absolute;
+    bottom: -72px;
+    padding: 12px 520px;
+    margin-left: -4px;
+    font-size: 16px;
+    border: none;
+    background: #444;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:hover {
+    background: #905ca2;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:active {
+    background: #734a81;
+  }
+  section.search-panel div.search-panel-block form button.submit-button i {
+    padding-right: 24px;
+  }
+  section.recommended-module {
+    width: 100%;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  section.recommended-module div.layer-background {
+    width: 1200px;
+    height: auto;
+    border-radius: 24px;
+    padding: 12px;
+    overflow: hidden;
+  }
+  section.recommended-module div.module-title {
+    width: 1200px;
+  }
+  section.recommended-module ul.item-card-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper {
+    position: relative;
+    top: 0;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    height: auto;
+    margin: 8px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 18px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.item-card-title {
+    color: #444;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover {
+    transform: scale(1.01);
+    top: -2px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover div.item-card-title {
+    color: #000;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper {
+    padding: 8px;
+    overflow: hidden;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+  }
+  footer div.footer-top-background {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 8px;
+  }
+  footer div.footer-top-background div.footer-top-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s all ease;
+    border-radius: 6px;
+    padding: 2px 16px;
+    font-size: 16px;
+    color: #444;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: #eee;
+    color: #000;
+    height: 20px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s all ease;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a:hover::before {
+    opacity: 1;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a:hover img {
+    transform: scale(1.2) rotate(15deg);
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a img.footer-item-icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 8px;
+    transition: 0.1s all cubic-bezier(0.2, 0.05, 0.45, 2.04);
+  }
+  footer div.footer-bottom-background {
+    width: 100%;
+    background: #eee;
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1.5fr 4fr 1.5fr;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo img {
+    width: 130px;
+    height: auto;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container a.mobile-branch-button {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information {
+    color: #444;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information b.company-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information a.branch-office {
+    margin-left: 4px;
+    background: #008bc8;
+    padding: 0 8px;
+    border-radius: 40px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information a.branch-office:hover {
+    background: rgba(0, 139, 200, 0.8);
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information i.fa-solid {
+    padding-right: 4px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information span.dividing-line {
+    padding: 0 8px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information hr {
+    margin: 8px 0;
+    border: #bbb 0.5px solid;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 42px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li {
+    margin: 8px 8px 0 0;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li img {
+    height: 36px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us {
+    font-size: 13px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr {
+    height: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td {
+    width: 50%;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td i.fa-solid {
+    padding-left: 4px;
+    color: #008bc8;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td i.fa-solid:hover {
+    color: rgba(0, 139, 200, 0.8);
+    transform: scale(1.1);
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td.contact-us-title {
+    color: #444;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1439px) and (min-width: 960px) {
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  div.container {
+    position: relative;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title-mb {
+    margin: 24px;
+  }
+  header div.fixed-navbar {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    top: 0;
+    border-bottom: 1px #eee solid;
+    width: 100%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 99;
+  }
+  header div.fixed-navbar div.navbar-mobile-container {
+    display: none;
+  }
+  header div.fixed-navbar label.navbar-close-button,
+  header div.fixed-navbar label.channel-close-button {
+    display: none;
+  }
+  header div.fixed-navbar div.navbar-group {
+    opacity: 1;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container img {
+    width: 160px;
+    height: auto;
+    margin-left: 16px;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item {
+    position: relative;
+    margin: 0 8px;
+    padding: 4px 8px;
+    transition: 0.1s;
+    border-radius: 2px;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item:hover {
+    background: #eee;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item a.navbar-link {
+    color: #444;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.1s;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item a.navbar-link i {
+    margin-right: 12px;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container ul.navbar-webMap li.navbar-item a.navbar-link:hover {
+    color: #000;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container {
+    width: auto;
+    position: relative;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item {
+    margin: 2px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:hover {
+    background: #eee;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item a.navbar-link {
+    position: relative;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(1) a i.fa {
+    color: #e50012;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(2) a i.fa {
+    color: #ec6c00;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(3) a i.fa {
+    color: #f9be00;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(4) a i.fa {
+    color: #00a85f;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(5) a i.fa {
+    color: #008bc8;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(6) a i.fa {
+    color: #905ca2;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container ul.navbar-nav li.navbar-item:nth-child(7) a i.fa {
+    color: #bbb;
+  }
+  header div.fixed-navbar div.channel-travel {
+    display: none;
+  }
+  section.carousel-panel {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1920px;
+    height: 500px;
+    margin: 130px 0;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  section.carousel-panel div.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.image-container .carousel {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+  }
+  section.carousel-panel div.image-container .carousel img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.carousel-panel ul.page-button-group {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 16px;
+  }
+  section.carousel-panel ul.page-button-group li.page-button {
+    width: 40px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  section.carousel-panel ul.page-button-group li.page-button:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+  section.carousel-panel ul.page-button-group li.page-button:active,
+  section.carousel-panel ul.page-button-group li.page-button :focus {
+    background: #ec6c00;
+  }
+  section.carousel-panel .page-button-active {
+    background: #ec6c00;
+  }
+  section.carousel-panel div.side-button-group {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.side-button-group i {
+    background: transparent;
+    padding: 6px;
+    color: #444;
+    transition: all 0.1s ease;
+  }
+  section.carousel-panel div.side-button-group i:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  section.carousel-panel div.side-button-group i:active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ec6c00;
+  }
+  section.search-panel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    min-width: 900px;
+    max-width: 1200px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  section.search-panel div.search-panel-block {
+    width: 95%;
+    height: 236px;
+    padding: 0;
+    margin: 0 24px;
+    background: #fff;
+    border-radius: 24px;
+    position: absolute;
+    top: -250px;
+    box-shadow: 0px 8px 64px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title {
+    background: #905ca2;
+    color: 0;
+    padding: 8px 0;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title h1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #eee;
+  }
+  section.search-panel div.search-panel-block form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-end;
+    position: relative;
+    padding: 16px 24px;
+    gap: 18px;
+  }
+  section.search-panel div.search-panel-block form div.form-group {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label span.checkbox-content {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    top: -2px;
+  }
+  section.search-panel div.search-panel-block form div.form-group select.form-control {
+    width: 90%;
+  }
+  section.search-panel div.search-panel-block form div.form-group input.form-control {
+    width: 90%;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.form-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.form-date input.form-date-control {
+    width: 40%;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.form-date span.date-to-date {
+    margin: 0px;
+  }
+  section.search-panel div.search-panel-block form div.form-group .input-style {
+    padding: 12px 0;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+  }
+  section.search-panel div.search-panel-block form button.submit-button {
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 16px;
+    border: none;
+    background: #444;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    grid-column: span 4;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:hover {
+    background: #905ca2;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:active {
+    background: #734a81;
+  }
+  section.search-panel div.search-panel-block form button.submit-button i {
+    padding-right: 24px;
+  }
+  section.recommended-module {
+    position: relative;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  section.recommended-module div.layer-background {
+    width: auto;
+    height: auto;
+    border-radius: 24px;
+    padding: 12px;
+    overflow: hidden;
+  }
+  section.recommended-module div.module-title {
+    width: auto;
+  }
+  section.recommended-module ul.item-card-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper {
+    position: relative;
+    top: 0;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    height: auto;
+    margin: 8px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 18px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.item-card-title {
+    color: #444;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover {
+    transform: scale(1.01);
+    top: -2px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover div.item-card-title {
+    color: #000;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper {
+    padding: 8px;
+    overflow: hidden;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+  }
+  footer div.footer-top-background {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 8px;
+  }
+  footer div.footer-top-background div.footer-top-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s all ease;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 12px;
+    color: #444;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    color: #000;
+    background: #eee;
+    height: 20px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s all ease;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a:hover::before {
+    opacity: 1;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a:hover img {
+    transform: scale(1.2) rotate(15deg);
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a img.footer-item-icon {
+    width: 32px;
+    height: 32px;
+    padding-right: 8px;
+    transition: 0.1s all cubic-bezier(0.2, 0.05, 0.45, 2.04);
+  }
+  footer div.footer-bottom-background {
+    width: 100%;
+    background: #eee;
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1.5fr 4fr 1.5fr;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo img {
+    width: 130px;
+    height: auto;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container a.mobile-branch-button {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information {
+    color: #444;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information b.company-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information a.branch-office {
+    margin-left: 4px;
+    background: #008bc8;
+    padding: 0 8px;
+    border-radius: 40px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information a.branch-office:hover {
+    background: rgba(0, 139, 200, 0.8);
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information i.fa-solid {
+    padding-right: 4px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information span.dividing-line {
+    padding: 0 8px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information hr {
+    margin: 8px 0;
+    border: #bbb 0.5px solid;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 42px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li {
+    margin: 8px 8px 0 0;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li img {
+    height: 36px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us {
+    font-size: 13px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr {
+    height: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td {
+    width: 50%;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td i.fa-solid {
+    padding-left: 4px;
+    color: #008bc8;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td i.fa-solid:hover {
+    color: rgba(0, 139, 200, 0.8);
+    transform: scale(1.1);
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tr td.contact-us-title {
+    color: #444;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 576px) {
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  div.container {
+    position: relative;
+    max-width: 1200px;
+  }
+  .title-mb {
+    margin: 24px;
+  }
+  div.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 68, 68, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  header div.fixed-navbar {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    top: 0;
+    border-bottom: 1px #eee solid;
+    width: 100%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 99;
+  }
+  header div.fixed-navbar div.navbar-mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+  }
+  header div.fixed-navbar div.navbar-mobile-container label.menu-button,
+  header div.fixed-navbar div.navbar-mobile-container label.channel-button {
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 8px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar div.navbar-mobile-container label.menu-button:hover,
+  header div.fixed-navbar div.navbar-mobile-container label.channel-button:hover {
+    cursor: pointer;
+  }
+  header div.fixed-navbar div.navbar-mobile-container label.menu-button:active,
+  header div.fixed-navbar div.navbar-mobile-container label.channel-button:active {
+    background: #bbb;
+  }
+  header div.fixed-navbar div.navbar-mobile-container div.mobile-logo img {
+    height: 64px;
+  }
+  header div.fixed-navbar label.navbar-close-button {
+    position: absolute;
+    padding: 8px 18px;
+    border-radius: 6px;
+    margin: 8px;
+    top: 0px;
+    left: 100px;
+    font-size: 32px;
+    color: #e50012;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar label.navbar-close-button:hover {
+    cursor: pointer;
+  }
+  header div.fixed-navbar label.navbar-close-button:active {
+    background: #bbb;
+  }
+  header div.fixed-navbar div.navbar-group {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container .desktop-logo {
+    display: none;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container {
+    order: -1;
+    border-bottom: 1px #bbb solid;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background: #fff;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item:nth-last-child(1),
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link {
+    display: block;
+    border-radius: 6px;
+    padding: 12px;
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    background: transparent;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link i,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link i {
+    width: 48px;
+    text-align: center;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link:hover,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link:hover {
+    background: rgba(238, 238, 238, 0.5);
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link:active,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link:active {
+    background: #eee;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(1) a i.fa {
+    color: #e50012;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(2) a i.fa {
+    color: #ec6c00;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(3) a i.fa {
+    color: #f9be00;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(4) a i.fa {
+    color: #00a85f;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(5) a i.fa {
+    color: #008bc8;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(6) a i.fa {
+    color: #905ca2;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(7) a i.fa {
+    color: #bbb;
+  }
+  header div.fixed-navbar label.channel-close-button {
+    position: absolute;
+    padding: 8px 18px;
+    border-radius: 6px;
+    margin: 8px;
+    top: 0px;
+    right: -100px;
+    font-size: 32px;
+    color: #e50012;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar label.channel-close-button:hover {
+    cursor: pointer;
+  }
+  header div.fixed-navbar label.channel-close-button:active {
+    background: #bbb;
+  }
+  header div.fixed-navbar div.channel-travel {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: -100%;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+  header div.fixed-navbar div.channel-travel p.channel-travel-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 8px;
+    margin-bottom: 24px;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item {
+    position: relative;
+    border-radius: 12px;
+    width: 100%;
+    overflow: hidden;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:hover img.channel-travel-background {
+    opacity: 0.1;
+    transform: translateX(-50%) scale(1.05);
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:hover a.channel-travel-link {
+    transform: scale(1.3);
+    color: #000;
+    filter: none;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:hover a.channel-travel-link::before {
+    opacity: 0;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+    background: #bbb;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item img.channel-travel-background {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item a.channel-travel-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 48px 12px;
+    color: #fff;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    filter: drop-shadow(0 0 2px #444);
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s all ease;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item a.channel-travel-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+    background: #000;
+    width: 100%;
+    height: 64px;
+    z-index: -1;
+  }
+  header div.fixed-navbar input {
+    display: none;
+  }
+  section.carousel-panel {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 360px;
+    margin-top: 80px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  section.carousel-panel div.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.image-container .carousel {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+  }
+  section.carousel-panel div.image-container .carousel img {
+    width: 100%;
+    height: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.carousel-panel ul.page-button-group {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 16px;
+  }
+  section.carousel-panel ul.page-button-group li.page-button {
+    width: 40px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  section.carousel-panel ul.page-button-group li.page-button:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+  section.carousel-panel ul.page-button-group li.page-button:active,
+  section.carousel-panel ul.page-button-group li.page-button :focus {
+    background: #ec6c00;
+  }
+  section.carousel-panel .page-button-active {
+    background: #ec6c00;
+  }
+  section.carousel-panel div.side-button-group {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.side-button-group i {
+    background: transparent;
+    padding: 16px;
+    color: #444;
+    transition: all 0.1s ease;
+  }
+  section.carousel-panel div.side-button-group i:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  section.carousel-panel div.side-button-group i:active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ec6c00;
+  }
+  section.search-panel {
+    position: relative;
+    height: 320px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.search-panel div.search-panel-block {
+    max-width: 900px;
+    width: auto;
+    margin: 0 12px;
+    background: #fff;
+    border-radius: 24px;
+    position: absolute;
+    top: -100px;
+    box-shadow: 0px 8px 64px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title {
+    background: #905ca2;
+    color: 0;
+    padding: 8px 0;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title h1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #eee;
+  }
+  section.search-panel div.search-panel-block form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+    position: relative;
+    padding: 24px;
+    gap: 12px;
+  }
+  section.search-panel div.search-panel-block form div.form-group {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label span.checkbox-content {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    top: -2px;
+  }
+  section.search-panel div.search-panel-block form div.form-group select.form-control {
+    width: 100%;
+  }
+  section.search-panel div.search-panel-block form div.form-group input.form-control {
+    width: 100%;
+  }
+  section.search-panel div.search-panel-block form div.form-group input.form-date-control {
+    width: 40%;
+  }
+  section.search-panel div.search-panel-block form div.form-group span.date-to-date {
+    margin: 0 6px;
+  }
+  section.search-panel div.search-panel-block form div.form-group .input-style {
+    padding: 12px 0;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+  }
+  section.search-panel div.search-panel-block form button.submit-button {
+    width: 100%;
+    height: 48px;
+    margin-top: 12px;
+    font-size: 16px;
+    border: none;
+    background: #444;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    grid-column: span 2;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:hover {
+    background: #905ca2;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:active {
+    background: #734a81;
+  }
+  section.search-panel div.search-panel-block form button.submit-button i {
+    padding-right: 24px;
+  }
+  section.recommended-module {
+    position: relative;
+    height: auto;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.recommended-module div.layer-background {
+    width: auto;
+    height: auto;
+    border-radius: 24px;
+    padding: 12px;
+    overflow: hidden;
+  }
+  section.recommended-module div.module-title {
+    width: auto;
+  }
+  section.recommended-module ul.item-card-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper {
+    position: relative;
+    top: 0;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    height: auto;
+    margin: 8px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 18px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.item-card-title {
+    color: #444;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover {
+    transform: scale(1.01);
+    top: -2px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover div.item-card-title {
+    color: #000;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:active {
+    background: #bbb;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper {
+    padding: 8px;
+    overflow: hidden;
+    max-width: 460px;
+    display: flex;
+    justify-content: center;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
+  }
+  footer div.footer-top-background {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 12px;
+  }
+  footer div.footer-top-background div.footer-top-container {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item {
+    border-radius: 7px;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:last-child {
+    grid-column: span 3;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #eee 1px solid;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 110%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    z-index: -1;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a img.footer-item-icon {
+    width: 22px;
+    margin-right: 8px;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(1) a:hover {
+    color: #e50012;
+    border: 1px solid #e50012;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(1) a:active {
+    background: #e50012;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(2) a:hover {
+    color: #ec6c00;
+    border: 1px solid #ec6c00;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(2) a:active {
+    background: #ec6c00;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(3) a:hover {
+    color: #f9be00;
+    border: 1px solid #f9be00;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(3) a:active {
+    background: #f9be00;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(4) a:hover {
+    color: #00a85f;
+    border: 1px solid #00a85f;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(4) a:active {
+    background: #00a85f;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(5) a:hover {
+    color: #008bc8;
+    border: 1px solid #008bc8;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(5) a:active {
+    background: #008bc8;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(6) a:hover {
+    color: #905ca2;
+    border: 1px solid #905ca2;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(6) a:active {
+    background: #905ca2;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(7) a:hover {
+    color: #bbb;
+    border: 1px solid #bbb;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(7) a:active {
+    background: #bbb;
+    color: #fff;
+  }
+  footer div.footer-bottom-background {
+    width: 100%;
+    background: #eee;
+    padding: 32px 0 48px 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo img {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container a.mobile-branch-button {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information {
+    color: #444;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information b.company-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information a.branch-office {
+    margin-left: px;
+    background: #008bc8;
+    padding: 0 8px;
+    border-radius: 40px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information a.branch-office:hover {
+    background: rgba(0, 139, 200, 0.8);
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information i.fa-solid {
+    padding-right: 4px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information span.dividing-line {
+    padding: 0 8px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information hr {
+    margin: 8px 0;
+    border: #bbb 0.5px solid;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 42px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li {
+    margin: 8px 8px 0 0;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li img {
+    max-height: 25px;
+    height: auto;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us {
+    font-size: 13px;
+    min-width: 240px;
+    width: 240px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody tr {
+    height: auto;
+    width: 50%;
+    margin-top: 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody tr:nth-child(-n+2) {
+    margin-top: 0px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody tr:nth-child(even) {
+    padding-left: 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody tr td {
+    width: 100%;
+    display: block;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody tr td i.fa-solid {
+    padding-left: 4px;
+    color: #008bc8;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody tr td i.fa-solid:hover {
+    color: rgba(0, 139, 200, 0.8);
+    transform: scale(1.1);
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody tr td.contact-us-title {
+    color: #444;
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  div.container {
+    position: relative;
+    max-width: 1200px;
+  }
+  .title-mb {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+  div.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 68, 68, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  header div.fixed-navbar {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    top: 0;
+    border-bottom: 1px #eee solid;
+    width: 100%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    z-index: 99;
+  }
+  header div.fixed-navbar div.navbar-mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+  }
+  header div.fixed-navbar div.navbar-mobile-container label.menu-button,
+  header div.fixed-navbar div.navbar-mobile-container label.channel-button {
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 8px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar div.navbar-mobile-container label.menu-button:hover,
+  header div.fixed-navbar div.navbar-mobile-container label.channel-button:hover {
+    cursor: pointer;
+  }
+  header div.fixed-navbar div.navbar-mobile-container label.menu-button:active,
+  header div.fixed-navbar div.navbar-mobile-container label.channel-button:active {
+    background: #bbb;
+  }
+  header div.fixed-navbar div.navbar-mobile-container div.mobile-logo img {
+    height: 48px;
+  }
+  header div.fixed-navbar label.navbar-close-button {
+    position: absolute;
+    padding: 8px 18px;
+    border-radius: 6px;
+    margin: 8px;
+    top: 0px;
+    left: 100px;
+    font-size: 24px;
+    color: #e50012;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar label.navbar-close-button:hover {
+    cursor: pointer;
+  }
+  header div.fixed-navbar label.navbar-close-button:active {
+    background: #bbb;
+  }
+  header div.fixed-navbar div.navbar-group {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-top-container .desktop-logo {
+    display: none;
+  }
+  header div.fixed-navbar div.navbar-group nav.navbar-bottom-container {
+    order: -1;
+    border-bottom: 1px #bbb solid;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background: #fff;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item:nth-last-child(1),
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link {
+    display: block;
+    border-radius: 6px;
+    padding: 12px;
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    background: transparent;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link i,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link i {
+    width: 48px;
+    text-align: center;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link:hover,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link:hover {
+    background: rgba(238, 238, 238, 0.5);
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-webMap li.navbar-item a.navbar-link:active,
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item a.navbar-link:active {
+    background: #eee;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(1) a i.fa {
+    color: #e50012;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(2) a i.fa {
+    color: #ec6c00;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(3) a i.fa {
+    color: #f9be00;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(4) a i.fa {
+    color: #00a85f;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(5) a i.fa {
+    color: #008bc8;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(6) a i.fa {
+    color: #905ca2;
+  }
+  header div.fixed-navbar div.navbar-group ul.navbar-nav li.navbar-item:nth-child(7) a i.fa {
+    color: #bbb;
+  }
+  header div.fixed-navbar label.channel-close-button {
+    position: absolute;
+    padding: 8px 18px;
+    border-radius: 6px;
+    margin: 8px;
+    top: 0px;
+    right: -100px;
+    font-size: 24px;
+    color: #e50012;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar label.channel-close-button:hover {
+    cursor: pointer;
+  }
+  header div.fixed-navbar label.channel-close-button:active {
+    background: #bbb;
+  }
+  header div.fixed-navbar div.channel-travel {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: -100%;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  header div.fixed-navbar div.channel-travel p.channel-travel-title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 8px;
+    margin-bottom: 24px;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item {
+    position: relative;
+    border-radius: 12px;
+    width: 100%;
+    overflow: hidden;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:hover img.channel-travel-background {
+    opacity: 0.1;
+    transform: translateX(-50%) scale(1.05);
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:hover a.channel-travel-link {
+    transform: scale(1.3);
+    color: #000;
+    filter: none;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:hover a.channel-travel-link::before {
+    opacity: 0;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+    background: #bbb;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item img.channel-travel-background {
+    position: absolute;
+    height: 100%;
+    min-width: 276px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item a.channel-travel-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 48px 12px;
+    color: #fff;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    filter: drop-shadow(0 0 2px #444);
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s all ease;
+  }
+  header div.fixed-navbar div.channel-travel ul.channel-travel-group li.channel-travel-item a.channel-travel-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+    background: #000;
+    width: 100%;
+    height: 64px;
+    z-index: -1;
+  }
+  header div.fixed-navbar input {
+    display: none;
+  }
+  section.carousel-panel {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 240px;
+    margin-top: 68px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  section.carousel-panel div.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.image-container .carousel {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+  }
+  section.carousel-panel div.image-container .carousel img {
+    width: 100%;
+    height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.carousel-panel ul.page-button-group {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8px;
+  }
+  section.carousel-panel ul.page-button-group li.page-button {
+    width: 40px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  section.carousel-panel ul.page-button-group li.page-button:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+  section.carousel-panel ul.page-button-group li.page-button:active,
+  section.carousel-panel ul.page-button-group li.page-button :focus {
+    background: #ec6c00;
+  }
+  section.carousel-panel .page-button-active {
+    background: #ec6c00;
+  }
+  section.carousel-panel div.side-button-group {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.carousel-panel div.side-button-group i {
+    background: transparent;
+    padding: 16px;
+    color: #444;
+    transition: all 0.1s ease;
+  }
+  section.carousel-panel div.side-button-group i:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  section.carousel-panel div.side-button-group i:active {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ec6c00;
+  }
+  section.search-panel {
+    position: relative;
+    height: 460px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.search-panel div.search-panel-block {
+    max-width: 560px;
+    width: auto;
+    margin: 0 12px;
+    background: #fff;
+    border-radius: 24px;
+    position: absolute;
+    top: -56px;
+    box-shadow: 0px 8px 64px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title {
+    background: #905ca2;
+    color: 0;
+    padding: 8px 0;
+  }
+  section.search-panel div.search-panel-block div.taiwan-search-title h1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #eee;
+  }
+  section.search-panel div.search-panel-block form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: flex-end;
+    position: relative;
+    padding: 24px;
+    gap: 12px;
+  }
+  section.search-panel div.search-panel-block form div.form-group {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+  }
+  section.search-panel div.search-panel-block form div.form-group div.label-title label span.checkbox-content {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    top: -2px;
+  }
+  section.search-panel div.search-panel-block form div.form-group select.form-control {
+    width: 100%;
+  }
+  section.search-panel div.search-panel-block form div.form-group input.form-control {
+    width: 100%;
+  }
+  section.search-panel div.search-panel-block form div.form-group input.form-date-control {
+    width: 40%;
+  }
+  section.search-panel div.search-panel-block form div.form-group span.date-to-date {
+    margin: 0 6px;
+  }
+  section.search-panel div.search-panel-block form div.form-group .input-style {
+    padding: 8px 0;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+  }
+  section.search-panel div.search-panel-block form button.submit-button {
+    width: 100%;
+    height: 48px;
+    margin-top: 12px;
+    font-size: 16px;
+    border: none;
+    background: #444;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    grid-column: span 1;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:hover {
+    background: #905ca2;
+  }
+  section.search-panel div.search-panel-block form button.submit-button:active {
+    background: #734a81;
+  }
+  section.search-panel div.search-panel-block form button.submit-button i {
+    padding-right: 24px;
+  }
+  section.recommended-module {
+    position: relative;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  section.recommended-module div.layer-background {
+    width: auto;
+    height: auto;
+    border-radius: 24px;
+    padding: 12px;
+    overflow: hidden;
+  }
+  section.recommended-module div.module-title {
+    position: relative;
+    width: auto;
+    text-align: center;
+  }
+  section.recommended-module div.module-title::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    width: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #905ca2;
+  }
+  section.recommended-module ul.item-card-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper {
+    position: relative;
+    top: 0;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 18px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.item-card-title {
+    color: #444;
+    font-size: 1rem;
+    padding: 4px 12px;
+    margin-bottom: 8px;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover {
+    transform: scale(1.01);
+    top: -2px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:hover div.item-card-title {
+    color: #000;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper:active {
+    background: #bbb;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper {
+    padding: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  section.recommended-module ul.item-card-group li.item-card-wrapper div.card-image-wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  footer div.footer-top-background {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 12px;
+  }
+  footer div.footer-top-background div.footer-top-container {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item {
+    border-radius: 7px;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:last-child {
+    grid-column: span 2;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #eee 1px solid;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 110%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    z-index: -1;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item a img.footer-item-icon {
+    width: 22px;
+    margin-right: 8px;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(1) a:hover {
+    color: #e50012;
+    border: 1px solid #e50012;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(1) a:active {
+    background: #e50012;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(2) a:hover {
+    color: #ec6c00;
+    border: 1px solid #ec6c00;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(2) a:active {
+    background: #ec6c00;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(3) a:hover {
+    color: #f9be00;
+    border: 1px solid #f9be00;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(3) a:active {
+    background: #f9be00;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(4) a:hover {
+    color: #00a85f;
+    border: 1px solid #00a85f;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(4) a:active {
+    background: #00a85f;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(5) a:hover {
+    color: #008bc8;
+    border: 1px solid #008bc8;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(5) a:active {
+    background: #008bc8;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(6) a:hover {
+    color: #905ca2;
+    border: 1px solid #905ca2;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(6) a:active {
+    background: #905ca2;
+    color: #fff;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(7) a:hover {
+    color: #bbb;
+    border: 1px solid #bbb;
+  }
+  footer div.footer-top-background div.footer-top-container div.footer-top-item:nth-child(7) a:active {
+    background: #bbb;
+    color: #fff;
+  }
+  footer div.footer-bottom-background {
+    width: 100%;
+    background: #eee;
+    padding: 24px 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-logo img {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container a.mobile-branch-button {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 16px auto;
+    background: #008bc8;
+    border-radius: 6px;
+    padding: 12px;
+    color: #fff;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container a.mobile-branch-button:active {
+    background: #006895;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information {
+    color: #444;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information b.company-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information a.branch-office {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information i.fa-solid {
+    padding-right: 4px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information span.dividing-line {
+    padding: 0 8px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information hr {
+    margin: 8px 0;
+    border: #bbb 0.5px solid;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    height: auto;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li {
+    margin: 8px 8px 0 0;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-information ul.footer-award li img {
+    max-height: 32px;
+    height: auto;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us tbody {
+    display: none;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+  }
+  footer div.footer-bottom-background div.footer-bottom-container div.footer-contact-us div.social-media div.social-media-icon img {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=all.css.map */
